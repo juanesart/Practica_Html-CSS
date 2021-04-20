@@ -1,0 +1,196 @@
+/* global */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #080609;
+    opacity: 1;
+    background-image:  radial-gradient(#43275f 1.35px, transparent 1.35px), radial-gradient(#43275f 1.35px, #080609 1.35px);
+    background-size: 54px 54px;
+    background-position: 0 0,27px 27px;
+    background-attachment: fixed;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white; 
+}
+ul{
+    list-style: none;
+}
+.container{
+    padding-top: 4rem;
+    width: 95%;
+    margin: auto;
+}
+/* navigation */
+.nav-main{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 0.5rem;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    background-color:#080609;
+    border-bottom: 0.1rem solid #f2f2f2;
+}
+.nav-logo{
+    width: 2rem;
+}
+.nav-main a{
+    font-weight: bold;
+    flex: 1;
+    padding: 0.5rem;
+}
+.nav-main a:hover{
+    opacity: .6;
+}
+.nav-main ul{
+    display: flex;
+}
+.nav-main ul li{
+    padding: 0.5rem;
+}
+
+/*img*/
+.img-main{
+    width: 100%;
+    height: 50rem;
+    background: url(./imgs/pexels-pixabay-316093.jpg) no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+}
+.img-main h2, .img-main p{
+    margin-bottom: 0.5rem;
+}
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    background: rgb(38, 38, 43);
+    border: 0.1rem solid white;
+    margin: 0.5rem 0;
+}
+.btn:hover{
+    opacity: .6;
+}
+/*cards*/
+#quienes_somos{
+    justify-content: center;
+    text-align: center;
+    padding: 3rem 0;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+.cards img{
+    padding-top: 2rem;
+    width: 100%;
+    height: 20rem;
+}
+.cards h3{
+    margin: 1rem 0;    
+}
+.cards a{
+    padding: 1rem 0;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+}
+/*Questions*/
+.preguntas{
+    padding-top: 3rem;
+    text-align: center;
+    justify-content: center;
+    background-color: #23212463;
+}
+.preguntas h3{
+    padding: 1.5rem;
+}
+.pregunta{    
+    padding: 1rem;
+}
+.pregunta li{
+    padding: 0.5rem;
+}
+.pregunta .pre{
+    opacity: 1;
+    font-weight: bold;
+}
+/* contact */
+.contacto{
+    padding: 4rem 0;
+}
+.contacto h2{
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+#id-form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+.colum{
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+}
+.colum input, .colum select{
+    width: 100%;
+    height: 2rem;
+}
+.colum input:hover{
+    opacity: .7;
+}
+.colum label{
+    font-weight: bold;
+}
+#id-form button{
+    width: 5rem;
+    height: 3rem;
+    color: #f2f2f2;
+    background-color: #424142;
+}
+#id-form button:hover{
+    opacity: .7;
+}
+/* footer */
+footer{
+    background-color: #080609;
+    padding: 2rem;
+    text-align: center;
+    justify-content: center;
+}
+footer a:hover{
+    opacity: .7;
+}
+/* responsive */
+@media screen and (max-width: 600px){
+    .cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #id-form{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .colum{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+}
